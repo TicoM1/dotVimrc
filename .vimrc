@@ -20,7 +20,7 @@ filetype plugin indent on    " enable loading indent file for filetype
 
 let g:pyflakes_use_quickfix = 1
 let g:pep8_map='<leader>8'
-au FileType python set omnifunc=pythoncomplete#Complete
+au FileType python set omnifunc=pythoncomplete#Complete ts=4 sw=4 et
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
@@ -54,9 +54,6 @@ set fo-=t " don't autom wrap when typing
 highlight ColorColumn ctermbg=233
 
 "Spaces instead of tabs
-set tabstop=4
 set softtabstop=4
-set shiftwidth=4
 set shiftround
-set expandtab
 
