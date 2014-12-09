@@ -3,7 +3,7 @@ filetype off
 "pathogen plugin organization
 set nocp
 source /home/ubu/.vim/autoload/pathogen.vim
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 
@@ -13,13 +13,14 @@ set foldlevel=99
 
 " mapping --------------------------------------------------------------------
 let mapleader = ','  	" another set of key shourtcuts, after pressing ,
-
+" this one has to be remapped so tasklist.vim doesn't complain.
+nnoremap <leader>v <Plug>TaskList
 " map sort function to leader key + s
 vnoremap <Leader>s :sort<CR>
 " on leader+i jump to first line char and enter insert mode
-noremap <leader>i |
+nnoremap <leader>i 0i
 " split window on leader+n
-noremap <leader>n :vsp 
+nnoremap <leader>n :vsp
 " easier moving of code blocks
 vnoremap < <gv " better indention
 vnoremap > >gv 
