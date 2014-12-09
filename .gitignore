@@ -1,3 +1,4 @@
 bundle/
 indent/
 pyflakes-pathogen/
+autoload/
