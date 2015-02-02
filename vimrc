@@ -17,10 +17,10 @@ let mapleader = ','  	" another set of key shourtcuts, after pressing ,
 nnoremap <leader>v <Plug>TaskList
 " map sort function to leader key + s
 vnoremap <Leader>s :sort<CR>
-" on leader+i jump to first line char and enter insert mode
-nnoremap <leader>i 0i
+" insert python print()
+nnoremap <leader>p iprint("
 " split window on leader+n
-nnoremap <leader>n :vsp
+nnoremap <leader>n :vsp 
 " easier moving of code blocks
 vnoremap < <gv " better indention
 vnoremap > >gv 
